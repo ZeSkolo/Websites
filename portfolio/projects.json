@@ -157,7 +157,7 @@
     "id": "snapshot",
     "title": "Snapshot & Rollback Engine",
     "category": "Systems",
-    "description": "A Linux storage engine with copy-on-write blocks, named snapshots and CRC-32 integrity checks.",
+    "description": "My Wipro embedded-training project: a Linux storage engine with copy-on-write blocks, named snapshots and CRC-32 integrity checks.",
     "tech": [
       "C",
       "Linux",
@@ -167,6 +167,7 @@
     "status": "Built",
     "repo": "lightweight-snapshot-engine",
     "notes": [
+      "Completed as the project for Wipro’s embedded training program.",
       "Immutable append-only block records and atomic metadata replacement.",
       "Named snapshots, rollback, persistence and integrity verification.",
       "An optional character driver is separate from the user-space engine."

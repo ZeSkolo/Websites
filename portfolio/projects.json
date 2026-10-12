@@ -1,5 +1,26 @@
 [
   {
+    "id": "eventops",
+    "title": "EventOps Pro",
+    "category": "Web",
+    "description": "A full-stack event operations suite connecting registration, QR attendance, feedback, resources, task scheduling and verified certificates.",
+    "tech": [
+      "Python",
+      "FastAPI",
+      "SQLite",
+      "JavaScript"
+    ],
+    "status": "Built",
+    "repo": "eventops-pro",
+    "frontendBranch": "main",
+    "notes": [
+      "Seven connected modules: event registration and waitlists, QR/token check-in, feedback analytics, protected resources, dependency-aware tasks, participant dashboards and PDF certificates.",
+      "Organizer and participant permissions, session authentication, CSRF protection and audit logs are enforced by the backend.",
+      "16 backend integration tests passed; desktop and mobile workflows were checked. Docker setup and deployment documentation are included.",
+      "Runnable project source; the EventOps application itself is not deployed as a live demo."
+    ]
+  },
+  {
     "id": "kubernetes",
     "title": "Agentic Kubernetes Assistant",
     "category": "Cloud & AI",
@@ -34,7 +55,7 @@
     "notes": [
       "Streaming RESP parser without a third-party protocol library.",
       "Commands include PING, SET, GET, DEL, INCR and TTL, with passive and background expiration.",
-      "The added web interface uses the repository\u2019s Python twin in-process; it does not control the separate Java server."
+      "The added web interface uses the repository’s Python twin in-process; it does not control the separate Java server."
     ]
   },
   {
@@ -96,7 +117,7 @@
   },
   {
     "id": "compiler",
-    "title": "minic \u00b7 C Compiler",
+    "title": "minic · C Compiler",
     "category": "Systems",
     "description": "A subset C compiler that turns source code into x86-64 System V assembly.",
     "tech": [
@@ -160,13 +181,13 @@
       "C",
       "FCFS",
       "Round Robin",
-      "Banker\u2019s Algorithm"
+      "Banker’s Algorithm"
     ],
     "status": "Built",
     "repo": null,
     "notes": [
       "FCFS and Round Robin scheduling implementations described in the CV.",
-      "Banker\u2019s Algorithm rejects unsafe allocations.",
+      "Banker’s Algorithm rejects unsafe allocations.",
       "No verified repository or live deployment link was supplied."
     ]
   },
@@ -204,7 +225,7 @@
     "notes": [
       "Includes a Redis server, database engine, memory-backed agent, private search and C compiler.",
       "Each implementation remains independently usable.",
-      "The lab\u2019s own frontend exposes all five tools within that repository."
+      "The lab’s own frontend exposes all five tools within that repository."
     ]
   },
   {
@@ -241,7 +262,7 @@
   },
   {
     "id": "birthday-photo",
-    "title": "Birthday \u00b7 Photo Edition",
+    "title": "Birthday · Photo Edition",
     "category": "Web",
     "description": "A photo-based edition of the birthday website.",
     "tech": [
@@ -272,7 +293,7 @@
   },
   {
     "id": "copilot-start",
-    "title": "Copilot \u00b7 School Activities",
+    "title": "Copilot · School Activities",
     "category": "Learning",
     "description": "A learning repository with a school activities app and a persistent registration adapter.",
     "tech": [
@@ -288,7 +309,7 @@
     "id": "octofit",
     "title": "OctoFit Tracker",
     "category": "Learning",
-    "description": "A local fitness-tracking prototype alongside the Copilot course\u2019s unfinished application skeleton.",
+    "description": "A local fitness-tracking prototype alongside the Copilot course’s unfinished application skeleton.",
     "tech": [
       "Python",
       "SQLite",
@@ -298,7 +319,7 @@
     "repo": "skills-build-applications-w-copilot-agent-mode",
     "notes": [
       "Working local workout log and leaderboard.",
-      "The added prototype is not completion of the course\u2019s Django/MongoDB stack."
+      "The added prototype is not completion of the course’s Django/MongoDB stack."
     ]
   },
   {

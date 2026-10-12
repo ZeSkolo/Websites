@@ -1,0 +1,84 @@
+{
+  "repo": "Websites",
+  "title": "Website gallery",
+  "subtitle": "Explore your existing storefront and its pages without replacing their design.",
+  "tools": [
+    {
+      "id": "preview",
+      "kind": "preview",
+      "title": "Output preview",
+      "description": "Open the original project\u2019s existing frontend. Source files are preserved.",
+      "actions": [
+        {
+          "id": "open",
+          "label": "Open output",
+          "fields": [
+            {
+              "key": "page",
+              "label": "Page",
+              "type": "select",
+              "value": "index.html",
+              "options": [
+                {
+                  "value": "index.html",
+                  "label": "Storefront"
+                },
+                {
+                  "value": "index2.html",
+                  "label": "Alternate storefront"
+                },
+                {
+                  "value": "checkout.html",
+                  "label": "Checkout"
+                },
+                {
+                  "value": "contact.html",
+                  "label": "Contact"
+                },
+                {
+                  "value": "register.html",
+                  "label": "Registration"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "label": "List pages",
+          "fields": []
+        }
+      ],
+      "base": "."
+    }
+  ],
+  "previews": [
+    {
+      "path": "index.html",
+      "label": "Storefront",
+      "root": "."
+    },
+    {
+      "path": "index2.html",
+      "label": "Alternate storefront",
+      "root": "."
+    },
+    {
+      "path": "checkout.html",
+      "label": "Checkout",
+      "root": "."
+    },
+    {
+      "path": "contact.html",
+      "label": "Contact",
+      "root": "."
+    },
+    {
+      "path": "register.html",
+      "label": "Registration",
+      "root": "."
+    }
+  ],
+  "runtime": "Existing pages preserved \u00b7 Checkout and registration remain original demos; no real payments or accounts are implemented",
+  "port": 8110
+}

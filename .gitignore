@@ -1,0 +1,6 @@
+
+
+# Local frontend runtime
+.web-data/
+__pycache__/
+*.pyc

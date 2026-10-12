@@ -1,0 +1,318 @@
+[
+  {
+    "id": "kubernetes",
+    "title": "Agentic Kubernetes Assistant",
+    "category": "Cloud & AI",
+    "description": "A multi-agent diagnostic assistant that separates observation, remediation and human approval.",
+    "tech": [
+      "Python",
+      "Google ADK",
+      "FastAPI",
+      "Kubernetes"
+    ],
+    "status": "In progress",
+    "repo": null,
+    "notes": [
+      "TCS Xcelerate project using diagnostic, analysis, remediation, executor and safety-supervisor agents.",
+      "Read-only tools inspect pod status, logs and events. Restarts, image updates and scaling wait for human approval in Slack.",
+      "Local incident scenarios include ImagePullBackOff, OOMKilled and liveness-probe failures."
+    ]
+  },
+  {
+    "id": "redis",
+    "title": "Mini-Redis",
+    "category": "Systems",
+    "description": "A Redis-compatible key-value server built over raw TCP, with RESP parsing and expiry.",
+    "tech": [
+      "Java NIO",
+      "TCP",
+      "RESP",
+      "Python"
+    ],
+    "status": "Built",
+    "repo": "redis-compatible-server",
+    "notes": [
+      "Streaming RESP parser without a third-party protocol library.",
+      "Commands include PING, SET, GET, DEL, INCR and TTL, with passive and background expiration.",
+      "The added web interface uses the repository\u2019s Python twin in-process; it does not control the separate Java server."
+    ]
+  },
+  {
+    "id": "minidb",
+    "title": "MiniDB",
+    "category": "Systems",
+    "description": "An embedded relational engine with its own page format, buffer pool and B+ tree.",
+    "tech": [
+      "Python",
+      "SQL",
+      "B+ trees",
+      "4 KB pages"
+    ],
+    "status": "Built",
+    "repo": "mini-database-engine",
+    "notes": [
+      "4 KB slotted pages, free-space bitmap, LRU buffer pool and dirty-page tracking.",
+      "Persistent on-disk B+ tree with leaf splits and range scans.",
+      "SQL subset supports CREATE, INSERT, SELECT, DELETE, WHERE and ORDER BY."
+    ]
+  },
+  {
+    "id": "laptophub",
+    "title": "LaptopHub",
+    "category": "Web",
+    "description": "A React e-commerce application with filtering, a cart, wishlist and responsive layouts.",
+    "tech": [
+      "React",
+      "Vite",
+      "Context API",
+      "MySQL"
+    ],
+    "status": "Built",
+    "repo": null,
+    "notes": [
+      "The CV reports a 95+ Lighthouse performance score and approximately 40% improved product discoverability.",
+      "Cart and wishlist use Context API; layouts support phone, tablet and desktop, with dark mode.",
+      "No verified repository or live deployment link was supplied for this project."
+    ]
+  },
+  {
+    "id": "agent",
+    "title": "Memory-backed ReAct Agent",
+    "category": "Cloud & AI",
+    "description": "Working, episodic and semantic memory that can update facts instead of accumulating stale preferences.",
+    "tech": [
+      "Python",
+      "ReAct",
+      "Embeddings",
+      "Vector store"
+    ],
+    "status": "Built",
+    "repo": "memory-backed-ai-agent",
+    "notes": [
+      "Hashed embeddings and cosine similarity support memory retrieval.",
+      "Calculator and memory tools are integrated into a ReAct loop.",
+      "The repository runs offline with a heuristic MockLLM; this portfolio does not imply live model inference."
+    ]
+  },
+  {
+    "id": "compiler",
+    "title": "minic \u00b7 C Compiler",
+    "category": "Systems",
+    "description": "A subset C compiler that turns source code into x86-64 System V assembly.",
+    "tech": [
+      "C",
+      "Lexer / AST",
+      "x86-64",
+      "Assembly"
+    ],
+    "status": "Built",
+    "repo": "minimal-c-compiler",
+    "notes": [
+      "Recursive-descent parsing, type handling, local stack offsets and code generation.",
+      "Supports integer expressions, pointers, functions, conditionals and loops.",
+      "The browser interface compiles submitted source to assembly only; it does not execute submitted programs."
+    ]
+  },
+  {
+    "id": "search",
+    "title": "Private Meta-search",
+    "category": "Systems",
+    "description": "Self-hosted search infrastructure with aggregation, rate limiting and cleaner result URLs.",
+    "tech": [
+      "SearXNG",
+      "Docker",
+      "Redis",
+      "nginx"
+    ],
+    "status": "Built",
+    "repo": "private-metasearch-engine",
+    "notes": [
+      "SearXNG stack with Redis rate limiting, reverse-proxy TLS and client-IP stripping.",
+      "Python aggregator runs engines in parallel, removes tracking parameters and re-ranks results.",
+      "Offline catalog and optional live Wikipedia mode are distinct from the SearXNG deployment."
+    ]
+  },
+  {
+    "id": "snapshot",
+    "title": "Snapshot & Rollback Engine",
+    "category": "Systems",
+    "description": "A Linux storage engine with copy-on-write blocks, named snapshots and CRC-32 integrity checks.",
+    "tech": [
+      "C",
+      "Linux",
+      "Copy-on-write",
+      "CRC-32"
+    ],
+    "status": "Built",
+    "repo": "lightweight-snapshot-engine",
+    "notes": [
+      "Immutable append-only block records and atomic metadata replacement.",
+      "Named snapshots, rollback, persistence and integrity verification.",
+      "An optional character driver is separate from the user-space engine."
+    ]
+  },
+  {
+    "id": "scheduler",
+    "title": "CPU Scheduler & Deadlock Simulator",
+    "category": "Systems",
+    "description": "Operating-system simulations for scheduling and safe resource allocation.",
+    "tech": [
+      "C",
+      "FCFS",
+      "Round Robin",
+      "Banker\u2019s Algorithm"
+    ],
+    "status": "Built",
+    "repo": null,
+    "notes": [
+      "FCFS and Round Robin scheduling implementations described in the CV.",
+      "Banker\u2019s Algorithm rejects unsafe allocations.",
+      "No verified repository or live deployment link was supplied."
+    ]
+  },
+  {
+    "id": "expense",
+    "title": "Expense Tracker",
+    "category": "Web",
+    "description": "A persistent Python/SQLite expense ledger with validation and spending reports.",
+    "tech": [
+      "Python",
+      "SQLite",
+      "SQL reports"
+    ],
+    "status": "Built",
+    "repo": "python-expense-tracker",
+    "notes": [
+      "Add, view and delete expenses; money is stored as integer cents.",
+      "Monthly and category reports use SQL aggregation.",
+      "A separate local web frontend connects to the original database implementation."
+    ]
+  },
+  {
+    "id": "lab",
+    "title": "Systems Engineering Lab",
+    "category": "Systems",
+    "description": "A collection of five implementations that expose the mechanics behind everyday abstractions.",
+    "tech": [
+      "Java",
+      "Python",
+      "C",
+      "Infrastructure"
+    ],
+    "status": "Built",
+    "repo": "systems-engineering-lab",
+    "notes": [
+      "Includes a Redis server, database engine, memory-backed agent, private search and C compiler.",
+      "Each implementation remains independently usable.",
+      "The lab\u2019s own frontend exposes all five tools within that repository."
+    ]
+  },
+  {
+    "id": "websites",
+    "title": "E-commerce Website Collection",
+    "category": "Web",
+    "description": "An existing collection of storefront, checkout, registration and contact pages.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "status": "Built",
+    "repo": "Websites",
+    "notes": [
+      "Static website pages are preserved in the repository.",
+      "These pages are distinct from the React LaptopHub project described in the CV.",
+      "Original checkout/registration pages are demos, not production payment or account systems."
+    ]
+  },
+  {
+    "id": "birthday",
+    "title": "Birthday Website",
+    "category": "Web",
+    "description": "An interactive, personal birthday website with a dedicated local preview.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "status": "Built",
+    "repo": "Birthday",
+    "notes": []
+  },
+  {
+    "id": "birthday-photo",
+    "title": "Birthday \u00b7 Photo Edition",
+    "category": "Web",
+    "description": "A photo-based edition of the birthday website.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "status": "Built",
+    "repo": "Birthday_",
+    "notes": []
+  },
+  {
+    "id": "meta-start",
+    "title": "Meta-search Workspace",
+    "category": "Systems",
+    "description": "A starter search interface added to the previously empty meta-search repository.",
+    "tech": [
+      "Python",
+      "Aggregation",
+      "Web UI"
+    ],
+    "status": "Built",
+    "repo": "Meta-Search-Engine",
+    "notes": [
+      "Uses the aggregator from the separate private-metasearch-engine repository.",
+      "Offline catalog with optional live Wikipedia lookup."
+    ]
+  },
+  {
+    "id": "copilot-start",
+    "title": "Copilot \u00b7 School Activities",
+    "category": "Learning",
+    "description": "A learning repository with a school activities app and a persistent registration adapter.",
+    "tech": [
+      "FastAPI",
+      "Python",
+      "SQLite"
+    ],
+    "status": "Learning project",
+    "repo": "skills-getting-started-with-github-copilot",
+    "notes": []
+  },
+  {
+    "id": "octofit",
+    "title": "OctoFit Tracker",
+    "category": "Learning",
+    "description": "A local fitness-tracking prototype alongside the Copilot course\u2019s unfinished application skeleton.",
+    "tech": [
+      "Python",
+      "SQLite",
+      "Web UI"
+    ],
+    "status": "Local prototype",
+    "repo": "skills-build-applications-w-copilot-agent-mode",
+    "notes": [
+      "Working local workout log and leaderboard.",
+      "The added prototype is not completion of the course\u2019s Django/MongoDB stack."
+    ]
+  },
+  {
+    "id": "git-game",
+    "title": "Stack Overflown",
+    "category": "Learning",
+    "description": "A developer-themed browser puzzle game in the Git introduction exercise repository.",
+    "tech": [
+      "JavaScript",
+      "Canvas",
+      "Git"
+    ],
+    "status": "Learning project",
+    "repo": "skills-introduction-to-git",
+    "notes": []
+  }
+]
